@@ -41,7 +41,7 @@ function openMenuBar() {
                             
                             <ul class="menu__list">
         
-                              <li class="menu__item"><a class="menu__link" href="https://fintech-website-six.vercel.app/">Home</a></li>
+                              <li class="menu__item"><a class="menu__link" href="https://holiday-pearl-ten.vercel.app/">Home</a></li>
         
                               <li class="menu__item"><a class="menu__link" href="#locations">Locations</a>
         
