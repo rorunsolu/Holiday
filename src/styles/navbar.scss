@@ -1,11 +1,29 @@
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
 
-    background-color: var(--color-white);
+    //height: 5rem;
+    width: 100vw;
+    width: 100dvw;
+
+    @media (width < 600px) {
+        height: 3.5rem;
+    }
+
+    border-bottom: var(--border-glass);
+
+    background-color: hsla(0, 0%, 0%, 0.85);
 }
 
 .nav {
@@ -13,20 +31,24 @@ nav {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
-    @media (width < 1300px) {
-        padding: 0 2rem;
-    }
+    height: 100%;
 
     &__list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        height: 100%;
+
         @media (width < 1000px) {
             display: none;
         }
@@ -37,6 +59,8 @@ nav {
 
         position: relative;
 
+        height: 100%;
+
         &:hover .nav__dropdown {
             display: block;
         }
@@ -46,11 +70,11 @@ nav {
         display: block;
         text-align: center;
 
-        padding: 1rem 2rem;
+        padding: 1.5rem 2.5rem;
 
         position: relative;
 
-        color: var(--color-black);
+        color: var(--color-white);
 
         &:hover {
             color: var(--color-orange);
@@ -61,15 +85,13 @@ nav {
         display: none;
 
         width: -webkit-fit-content;
-
         width: -moz-fit-content;
-
         width: fit-content;
 
         position: absolute;
         z-index: 200;
 
-        background: var(--color-white);
+        background-color: hsla(0, 0%, 0%, 0.85);
 
         &-item {
             display: block;
@@ -80,7 +102,7 @@ nav {
 
             padding: 0.5rem 2rem;
 
-            color: var(--color-black);
+            color: var(--color-white);
 
             &:hover {
                 color: var(--color-orange);

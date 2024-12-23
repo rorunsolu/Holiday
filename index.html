@@ -16,11 +16,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
             /modern-normalize.min.css" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,14 +25,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
 
-    <script type="module" src="/scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+    <script type="module" src="/src/main.js"></script>
 
   </head>
 
   <body>
 
     <nav>
-      <div class="container nav width-100">
+      <div class="container nav">
 
         <a class="logo" href="https://holiday-pearl-ten.vercel.app/">Travely</a>
 
@@ -98,8 +100,6 @@
 
         <h1 class="header__title">Explore the <span>Best Destinations</span> for Your Next Adventure</h1>
 
-        <img class="header__image" src="images/hero-bg.jpg" alt="hero image" loading="lazy">
-
       </div>
 
     </header>
@@ -115,7 +115,7 @@
           <div class="activities__wrapper">
 
             <article class="activities__card">
-              <img class="activities__image" src="./images/Mountain Biking.jpg" alt="Mountain Biking">
+              <img class="activities__image" src="./src/images/Mountain Biking.jpg" alt="Mountain Biking">
               <h3 class="activities__name">Mountain Biking</h3>
               <p class="activities__price">£30 <span class="quantity">per session</span></p>
               <p class="activities__rating">★★★★★</p>
@@ -137,7 +137,7 @@
             </article>
 
             <article class="activities__card">
-              <img class="activities__image" src="./images/Scuba Diving.jpg" alt="Scuba Diving">
+              <img class="activities__image" src="./src/images/Scuba Diving.jpg" alt="Scuba Diving">
               <h3 class="activities__name">Scuba Diving</h3>
               <p class="activities__price">£100 <span class="quantity">per session</span></p>
               <p class="activities__rating">★★★★★</p>
@@ -159,7 +159,7 @@
             </article>
 
             <article class="activities__card">
-              <img class="activities__image" src="./images/Rock Climbing.jpg" alt="Rock Climbing">
+              <img class="activities__image" src="./src/images/Rock Climbing.jpg" alt="Rock Climbing">
               <h3 class="activities__name">Rock Climbing</h3>
               <p class="activities__price">£40 <span class="quantity">per session</span></p>
               <p class="activities__rating">★★★★★</p>
@@ -181,7 +181,7 @@
             </article>
 
             <article class="activities__card">
-              <img class="activities__image" src="./images/Kayaking.jpg" alt="Kayaking">
+              <img class="activities__image" src="./src/images/Kayaking.jpg" alt="Kayaking">
               <h3 class="activities__name">Kayaking</h3>
               <p class="activities__price">£25 <span class="quantity">per session</span></p>
               <p class="activities__rating">★★★★★</p>
@@ -208,76 +208,6 @@
 
       </section>
 
-      <section id="testimonials">
-
-        <div class="container testimonials">
-
-          <h2 class="testimonials__title">What <span>Our Customers</span> Say</h2>
-
-          <div class="testimonials__card-wrapper">
-
-            <article class="testimonials__card">
-
-              <span class="testimonials__rating">★★★★★</span>
-
-              <p class="testimonials__description">Our holiday to Spain was unforgettable! The booking process was
-                seamless, and the
-                hotel exceeded our expectations. Thank you for making it so easy!</p>
-
-              <div class="testimonials__author">
-                <img class="testimonials__author-image" src="./images/person-3.jpg" alt="Customer 1">
-                <div class="testimonials__author-info">
-                  <h3 class="testimonials__author-name">John Doe</h3>
-                  <p class="testimonials__author-location">London, UK</p>
-                </div>
-              </div>
-
-            </article>
-
-
-            <article class="testimonials__card">
-
-              <span class="testimonials__rating">★★★★★</span>
-
-              <p class="testimonials__description">Booking our family holiday was a breeze! The resort recommendations
-                were
-                fantastic, and the whole process was so easy. We had the best time in Greece.</p>
-
-              <div class="testimonials__author">
-                <img class="testimonials__author-image" src="./images/person-5.jpg" alt="Customer 2">
-                <div class="testimonials__author-info">
-                  <h3 class="testimonials__author-name">Emily Smith</h3>
-                  <p class="testimonials__author-location">New York, USA</p>
-                </div>
-              </div>
-
-            </article>
-
-            <article class="testimonials__card">
-
-              <span class="testimonials__rating">★★★★★</span>
-
-              <p class="testimonials__description">I was impressed by the customer service. They helped us find the
-                perfect beach
-                villa in Bali, and everything went smoothly. Highly recommended!</p>
-
-              <div class="testimonials__author">
-                <img class="testimonials__author-image" src="./images/person-6.jpg" alt="Customer 3">
-                <div class="testimonials__author-info">
-                  <h3 class="testimonials__author-name">Alex Johnson</h3>
-                  <p class="testimonials__author-location">Sydney, Australia</p>
-                </div>
-              </div>
-
-            </article>
-
-
-          </div>
-
-        </div>
-
-      </section>
-
       <section id="locations">
         <div class="container locations">
 
@@ -286,7 +216,7 @@
           <div class="locations__wrapper">
 
             <article class="locations__card">
-              <img class="locations__image" src="images/paris-img.jpg"
+              <img class="locations__image" src="./src/images/paris-img.jpg"
                    alt="A view of Paris, France, featuring iconic landmarks">
               <div class="locations__card-text">
                 <h3 class="locations__name">Paris, France</h3>
@@ -304,7 +234,8 @@
             </article>
 
             <article class="locations__card">
-              <img class="locations__image" src="images/tokyo-img.jpg" alt="A bustling street view of Tokyo, Japan">
+              <img class="locations__image" src="./src/images/tokyo-img.jpg"
+                   alt="A bustling street view of Tokyo, Japan">
               <div class="locations__card-text">
                 <h3 class="locations__name">Tokyo, Japan</h3>
                 <p class="locations__description">Tokyo, the bustling capital of Japan, offers a mix of traditional and
@@ -325,6 +256,126 @@
           </div>
 
         </div>
+      </section>
+
+      <section id="support">
+
+        <div class="container support">
+
+          <div class="support__text-wrapper">
+
+            <span class="support__subtitle"><i class="ri-heart-line"></i>Here for you</span>
+            <h2 class="support__title">Customer Support</h2>
+            <p class="support__description">We are dedicated to providing exceptional assistance, anytime you need it.
+            </p>
+
+            <div class="support__benefits">
+
+              <div class="support__benefit">
+                <div class="support__icon-wrapper">
+                  <i class="ri-customer-service-2-line"></i>
+                </div>
+
+                <p class="support__benefit-text">
+                  <span class="support__benefit-name">24/7 Support</span> Our support team is available around the clock
+                  to
+                  ensure your questions are answered quickly and effectively.
+                  <br><a class="button-direct" href="#">Learn More</a>
+                </p>
+
+              </div>
+
+              <div class="support__benefit">
+                <div class="support__icon-wrapper">
+                  <i class="ri-customer-service-2-line"></i>
+                </div>
+
+                <p class="support__benefit-text">
+                  <span class="support__benefit-name">Expert Assistance</span> Get guidance from our trained support
+                  specialists, ready to help with any issue you encounter.
+                  <br><a class="button-direct" href="#">Learn More</a>
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <img class="support__image" src="./src/images/support-img.jpg" alt="Customer support team image">
+
+        </div>
+
+      </section>
+
+      <section id="testimonials">
+
+        <div class="container testimonials">
+
+          <h2 class="testimonials__title">What <span>Our Customers</span> Say</h2>
+
+          <div class="testimonials__card-wrapper">
+
+            <article class="testimonials__card">
+
+              <span class="testimonials__rating">★★★★★</span>
+
+              <p class="testimonials__description">Our holiday to Spain was unforgettable! The booking process was
+                seamless, and the
+                hotel exceeded our expectations. Thank you for making it so easy!</p>
+
+              <div class="testimonials__author">
+                <img class="testimonials__author-image" src="./src/images/person-3.jpg" alt="Customer 1">
+                <div class="testimonials__author-info">
+                  <h3 class="testimonials__author-name">John Doe</h3>
+                  <p class="testimonials__author-location">London, UK</p>
+                </div>
+              </div>
+
+            </article>
+
+
+            <article class="testimonials__card">
+
+              <span class="testimonials__rating">★★★★★</span>
+
+              <p class="testimonials__description">Booking our family holiday was a breeze! The resort recommendations
+                were
+                fantastic, and the whole process was so easy. We had the best time in Greece.</p>
+
+              <div class="testimonials__author">
+                <img class="testimonials__author-image" src="./src/images/person-5.jpg" alt="Customer 2">
+                <div class="testimonials__author-info">
+                  <h3 class="testimonials__author-name">Emily Smith</h3>
+                  <p class="testimonials__author-location">New York, USA</p>
+                </div>
+              </div>
+
+            </article>
+
+            <article class="testimonials__card">
+
+              <span class="testimonials__rating">★★★★★</span>
+
+              <p class="testimonials__description">I was impressed by the customer service. They helped us find the
+                perfect beach
+                villa in Bali, and everything went smoothly. Highly recommended!</p>
+
+              <div class="testimonials__author">
+                <img class="testimonials__author-image" src="./src/images/person-6.jpg" alt="Customer 3">
+                <div class="testimonials__author-info">
+                  <h3 class="testimonials__author-name">Alex Johnson</h3>
+                  <p class="testimonials__author-location">Sydney, Australia</p>
+                </div>
+              </div>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
       </section>
 
       <section id="about">
@@ -444,57 +495,6 @@
 
 
           </div>
-
-
-        </div>
-
-      </section>
-
-      <section id="support">
-
-        <div class="container support">
-
-          <div class="support__text-wrapper">
-
-            <span class="support__subtitle"><i class="ri-heart-line"></i>Here for you</span>
-            <h2 class="support__title">Customer Support</h2>
-            <p class="support__description">We are dedicated to providing exceptional assistance, anytime you need it.
-            </p>
-
-            <div class="support__benefits">
-
-              <div class="support__benefit">
-                <div class="support__icon-wrapper">
-                  <i class="ri-customer-service-2-line"></i>
-                </div>
-
-                <p class="support__benefit-text">
-                  <span class="support__benefit-name">24/7 Support</span> Our support team is available around the clock
-                  to
-                  ensure your questions are answered quickly and effectively.
-                  <br><a class="button-direct" href="#">Learn More</a>
-                </p>
-
-              </div>
-
-              <div class="support__benefit">
-                <div class="support__icon-wrapper">
-                  <i class="ri-customer-service-2-line"></i>
-                </div>
-
-                <p class="support__benefit-text">
-                  <span class="support__benefit-name">Expert Assistance</span> Get guidance from our trained support
-                  specialists, ready to help with any issue you encounter.
-                  <br><a class="button-direct" href="#">Learn More</a>
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <img class="support__image" src="./images/support-img.jpg" alt="Customer support team image">
 
         </div>
 

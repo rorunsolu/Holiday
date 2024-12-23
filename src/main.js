@@ -1,32 +1,31 @@
-import '/styles/style.scss';
-import '/styles/typography.scss';
-import '/styles/utilities.scss';
-import '/styles/navbar.scss';
-import '/styles/menu.scss';
-import '/styles/header.scss';
-import '/styles/locations.scss';
-import '/styles/about.scss';
-import '/styles/activities.scss';
-import '/styles/support.scss';
-import '/styles/testimonials.scss';
-import '/styles/accordion.scss';
-import '/styles/conversion.scss';
-import '/styles/footer.scss';
+import './styles/style.scss';
+import './styles/typography.scss';
+import './styles/utilities.scss';
+import './styles/navbar.scss';
+import './styles/menu.scss';
+import './styles/header.scss';
+import './styles/locations.scss';
+import './styles/about.scss';
+import './styles/activities.scss';
+import './styles/support.scss';
+import './styles/testimonials.scss';
+import './styles/accordion.scss';
+import './styles/conversion.scss';
+import './styles/footer.scss';
 
 
 let openMenuBarBtn = document.getElementById('js-open-menu-btn');
-
 openMenuBarBtn.addEventListener('click', openMenuBar);
 
 function openMenuBar() {
-    if (document.getElementById('js-menu')) return;
+  if (document.getElementById('js-menu')) return;
 
-    let menuBar = document.createElement('div');
+  let menuBar = document.createElement('div');
 
-    menuBar.className = 'menu';
-    menuBar.id = 'js-menu';
+  menuBar.className = 'menu';
+  menuBar.id = 'js-menu';
 
-    menuBar.innerHTML = `
+  menuBar.innerHTML = `
                         
                           <div class="menu__top" id="js-menu__top">
                 
@@ -97,97 +96,97 @@ function openMenuBar() {
                           </div>
                         `;
 
-    document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
 
-    document.body.appendChild(menuBar);
+  document.body.appendChild(menuBar);
 
-    let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
+  let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
 
-    closeMenuBarBtn.addEventListener('click', closeMenuBar);
+  closeMenuBarBtn.addEventListener('click', closeMenuBar);
 
-    let links = menuBar.querySelectorAll('ul li a');
-    links.forEach(link => {
-        link.addEventListener('click', closeMenuBar);
-    });
+  let links = menuBar.querySelectorAll('ul li a');
+  links.forEach(link => {
+    link.addEventListener('click', closeMenuBar);
+  });
 
-    createOverlay();
-    activateDropdown();
+  createOverlay();
+  activateDropdown();
 }
 
 function activateDropdown() {
-    let arrows = document.querySelectorAll('.menu__item-arrow');
+  let arrows = document.querySelectorAll('.menu__item-arrow');
 
-    arrows.forEach(arrow => {
-        let dropdown = arrow.nextElementSibling;
+  arrows.forEach(arrow => {
+    let dropdown = arrow.nextElementSibling;
 
-        if (dropdown) {
-            arrow.addEventListener('click', function () {
-                if (dropdown.style.display === 'block') {
-                    dropdown.style.display = 'none';
-                } else {
-                    dropdown.style.display = 'block';
-                }
-            });
+    if (dropdown) {
+      arrow.addEventListener('click', function () {
+        if (dropdown.style.display === 'block') {
+          dropdown.style.display = 'none';
+        } else {
+          dropdown.style.display = 'block';
         }
-    });
+      });
+    }
+  });
 
-    rotateArrow();
+  rotateArrow();
 }
 
 function rotateArrow() {
-    let arrows = document.querySelectorAll('.menu__item-arrow');
+  let arrows = document.querySelectorAll('.menu__item-arrow');
 
-    arrows.forEach(arrow => {
-        arrow.addEventListener('click', function () {
-            this.classList.toggle('rotate');
-        });
+  arrows.forEach(arrow => {
+    arrow.addEventListener('click', function () {
+      this.classList.toggle('rotate');
     });
+  });
 }
 
 function closeMenuBar() {
-    let menuBar = document.getElementById('js-menu');
+  let menuBar = document.getElementById('js-menu');
 
-    document.body.style.overflow = 'auto';
+  document.body.style.overflow = 'auto';
 
-    if (menuBar) {
-        menuBar.remove();
-    }
+  if (menuBar) {
+    menuBar.remove();
+  }
 
-    removeOverlay();
+  removeOverlay();
 }
 
 function createOverlay() {
-    let overlay = document.createElement('div');
+  let overlay = document.createElement('div');
 
-    overlay.className = 'menu__overlay';
+  overlay.className = 'menu__overlay';
 
-    overlay.addEventListener("click", closeMenuBar);
+  overlay.addEventListener("click", closeMenuBar);
 
-    document.body.appendChild(overlay);
+  document.body.appendChild(overlay);
 }
 
 function removeOverlay() {
-    let overlay = document.querySelector('.menu__overlay');
+  let overlay = document.querySelector('.menu__overlay');
 
-    if (overlay) {
-        overlay.remove();
-    }
+  if (overlay) {
+    overlay.remove();
+  }
 }
 
 const accordionHeader = document.querySelectorAll(".accordion__header");
 
 accordionHeader.forEach(accordionHeader => {
-    accordionHeader.addEventListener("click", event => {
-        accordionHeader.classList.toggle("active");
-        const accordionBody = accordionHeader.nextElementSibling;
+  accordionHeader.addEventListener("click", event => {
+    accordionHeader.classList.toggle("active");
+    const accordionBody = accordionHeader.nextElementSibling;
 
-        if (accordionHeader.classList.contains("active")) {
-            accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
-        }
+    if (accordionHeader.classList.contains("active")) {
+      accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+    }
 
-        else {
-            accordionBody.style.maxHeight = 0;
-        }
+    else {
+      accordionBody.style.maxHeight = 0;
+    }
 
-    });
+  });
 });

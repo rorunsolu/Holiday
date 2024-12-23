@@ -12,7 +12,8 @@
     --color-bg-card: hsl(240, 3%, 10%);
     --color-bg-body: hsl(222, 11%, 7%);
 
-    --border-radius: 0.425rem;
+    --border-glass: 2px solid hsla(0, 0%, 100%, 0.125);
+    --border-radius: 0.325rem;
 
     --padding: 1.25rem;
     --padding-small: 0.75rem;
@@ -51,16 +52,8 @@ body {
     background-color: var(--color-bg-body);
 }
 
-header {
-    padding: 10rem 0;
-
-    @media (width < 600px) {
-        padding: 7rem 0;
-    }
-}
-
 section {
-    padding: 10rem 0;
+    padding: 7.5rem 0;
 
     @media (width < 800px) {
         padding: 5rem 0;

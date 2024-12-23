@@ -11,12 +11,6 @@
     }
 }
 
-.width-100 {
-    @media (width < 1300px) {
-        width: 100%;
-    }
-}
-
 .button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
