@@ -15,10 +15,10 @@
     &__card {
         padding: var(--padding);
 
-        background-color: rgba(29, 29, 30, 255);
+        background-color: var(--color-white);
     }
     &__description {
-        color: var(--color-grey);
+        color: var(--color-black);
     }
     &__rating {
         font-size: 1.5rem;
@@ -41,9 +41,11 @@
         border-radius: 50%;
     }
     &__author-location {
-        color: var(--color-grey);
+        color: var(--color-black);
     }
     &__author-name {
-        color: var(--color-white);
+        color: var(--color-black);
+
+        font-weight: 600;
     }
 }

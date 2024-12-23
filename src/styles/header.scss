@@ -18,12 +18,13 @@ header {
         width: 100%;
         height: 100%;
 
-        background-image: url("/src/images/hero-bg.jpg");
+        background-image: url("/src/images/travel.jpg");
         background-size: cover;
         background-position: center;
         z-index: -1;
 
-        opacity: 0.5;
+        -webkit-filter: brightness(0.85);
+        filter: brightness(0.85);
     }
 }
 
@@ -48,6 +49,8 @@ header {
 
     &__title {
         margin-bottom: 2rem;
+
+        font-family: "Oswald", serif;
     }
 
     &__image {

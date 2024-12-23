@@ -176,7 +176,7 @@ function removeOverlay() {
 const accordionHeader = document.querySelectorAll(".accordion__header");
 
 accordionHeader.forEach(accordionHeader => {
-  accordionHeader.addEventListener("click", event => {
+  accordionHeader.addEventListener("click", () => {
     accordionHeader.classList.toggle("active");
     const accordionBody = accordionHeader.nextElementSibling;
 
@@ -187,6 +187,5 @@ accordionHeader.forEach(accordionHeader => {
     else {
       accordionBody.style.maxHeight = 0;
     }
-
   });
 });

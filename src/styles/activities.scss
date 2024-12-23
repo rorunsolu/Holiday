@@ -26,6 +26,7 @@
         padding: var(--padding);
 
         background-color: var(--color-bg-card);
+        background-color: var(--color-white);
 
         @media (width < 300px) {
             padding: var(--padding-small);
@@ -39,7 +40,7 @@
     }
 
     &__name {
-        color: var(--color-white);
+        color: var(--color-black);
     }
 
     &__rating {
@@ -47,7 +48,7 @@
     }
 
     &__price {
-        color: var(--color-white);
+        color: var(--color-black);
     }
 
     &__rating {
